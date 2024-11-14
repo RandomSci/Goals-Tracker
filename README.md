@@ -13,7 +13,7 @@ This project is designed to track and visualize the goals and progress of a Comp
 
 > Example of the task list interface after selecting a year.
 
-![Demo Screenshot](insert-your-demo-screenshot-link-here)
+![Demo Screenshot](![image](https://github.com/user-attachments/assets/ffe46606-4bb4-4143-aba5-216c29e2fdbd))
 
 ## Technologies Used
 
@@ -35,3 +35,35 @@ This project is designed to track and visualize the goals and progress of a Comp
 
    ```bash
    git clone https://github.com/yourusername/yourprojectname.git
+2. Navigate to the project directory:
+
+   ```bash
+   cd yourprojectname
+3. Install the required dependencies:
+      ```bash
+      python app.py
+
+4. Run the app:
+      ```bash
+   python app.py
+Open your browser and go to http://127.0.0.1:5000.
+
+### Usage
+* Once the application is running, you can access the task list and interact with tasks.
+* Select a year from the dropdown to filter tasks for that year.
+* Update the task status or delete tasks as needed.
+* Use the moon and sun icons to toggle between light and dark modes.
+
+### Contributing
+1. Fork this repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/feature-name
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add feature'
+4. Push to the branch:
+   ```bash
+   git push origin feature/feature-name
+5. Open a pull request.
+   
