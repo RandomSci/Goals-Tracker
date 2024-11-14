@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/VIew_Progress.css">
+    
+    <title>Computer Vision Engineer Goals</title>
+</head>
+<body>
+
+    <header>
+        <h1>Computer Vision Engineer Goals</h1>
+        <p>Tracking My Journey from February 2023 to December 2027</p>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+    
+<a href="/">Home</a>
+
+
+<div class="container">
+    <!-- Year Selection Dropdown -->
+    <div class="year-selection">
+        <h2>Select Year</h2>
+        <form method="get" action="/View_Progress">
+            <div class="dropdown-container">
+                <select name="year" id="year-dropdown">
+                    <option value="">All Years</option>
+                    {% for year in years %}
+                        <option value="{{ year['year'] }}" {% if year['year'] == selected_year %} selected {% endif %}>{{ year['year'] }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit" class="btn-primary">Filter Tasks</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Display Tasks for the Selected Year -->
+    <div class="tasks">
+        <h2>Tasks for Year {% if selected_year %} {{ selected_year }} {% else %} All Years {% endif %}</h2>
+        <div class="task-list">
+            {% for task in tasks %}
+                <div class="task-card">
+                    <h3>{{ task['task_name'] }}</h3>
+                    <p>Status: <strong>{{ task['status'] }}</strong></p>
+                    <form method="POST" action="/update_status/{{ task['id'] }}">
+                        <select name="status" class="task-status">
+                            <option value="Not Started" {% if task['status'] == 'not_started' %} selected {% endif %}>Not Started</option>
+                            <option value="In Progress" {% if task['status'] == 'in_progress' %} selected {% endif %}>In Progress</option>
+                            <option value="Completed" {% if task['status'] == 'completed' %} selected {% endif %}>Completed</option>
+                        </select>
+                        <button type="submit" class="btn-update">Update Status</button>
+                    </form>
+                    <form method="POST" action="/delete_task/{{ task['id'] }}">
+                        <button type="submit" class="btn-danger">Delete Task</button>
+                    </form>
+                </div>
+            {% else %}
+                <p>No tasks available for this year.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Computer Vision Engineer Selwyn. All rights reserved.</p>
+</footer>
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>

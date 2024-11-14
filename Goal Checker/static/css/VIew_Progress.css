@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f5f9;
+    color:#4CAF50;
+    line-height: 1.6;
+}
+
+a {
+    color: #4CAF50; /* Blue link */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 20px;
+    position: absolute;
+    left: 15%;
+    margin-top: 3%;
+    transform: translate(-50%, -50%);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 4px solid #4CAF50;
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Main container for content */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Year Selection Dropdown */
+.year-selection {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.year-selection h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#year-dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Task List */
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tasks */
+    gap: 30px;
+}
+.task-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.task-card:hover {
+    transform: scale(1.05);
+}
+.task-card h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.task-status {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.btn-update, .btn-danger {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+.btn-update {
+    background-color: #4CAF50;
+    color: white;
+}
+.btn-update:hover {
+    background-color: #45a049;
+}
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #4CAF50; 
+    color: white;
+    padding: 20px;
+}
+footer p {
+    font-size: 1rem;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0; /* Light text for general readability */
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+    color: #fff; /* Ensure header text is white */
+}
+
+body.dark-mode .container {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .task-list {
+    color: #e0e0e0; /* Light text in task list */
+}
+
+body.dark-mode .task-card {
+    background-color: #333;
+    color: #e0e0e0; /* Ensure text inside task cards is visible */
+    border: 1px solid #444;
+}
+
+body.dark-mode .task-card h3,
+body.dark-mode .task-card p {
+    color: #fff; /* White text for task titles and descriptions */
+}
+
+body.dark-mode .task-status,
+body.dark-mode .btn-primary {
+    color: #fff; /* Ensure button text is visible */
+}
+
+body.dark-mode .btn-update {
+    background-color: #27ae60; /* Green button */
+    color: #fff;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #c0392b; /* Red button */
+    color: #fff;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #fff; /* White text for footer */
+}
+
+body.dark-mode a {
+    color: #fff; /* Links will also be white in dark mode */
+}
+/* Icon Styles */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+body.dark-mode #theme-toggle {
+    color: #f1c40f; /* Gold color for moon in dark mode */
+}
