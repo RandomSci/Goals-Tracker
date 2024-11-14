@@ -13,7 +13,9 @@ This project is designed to track and visualize the goals and progress of a Comp
 
 > Example of the task list interface after selecting a year.
 
-![Demo Screenshot](![image](https://github.com/user-attachments/assets/ffe46606-4bb4-4143-aba5-216c29e2fdbd))
+![Screenshot from 2024-11-15 03-03-39](https://github.com/user-attachments/assets/7fb852a3-7ea7-4b33-b21c-7b90f7f1ae15)
+
+![Screenshot from 2024-11-15 02-39-13](https://github.com/user-attachments/assets/0eca2603-15b6-4b4a-a4f9-955886f776ad)))
 
 ## Technologies Used
 
