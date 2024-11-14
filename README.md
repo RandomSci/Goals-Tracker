@@ -13,7 +13,7 @@ This project is designed to track and visualize the goals and progress of a Comp
 
 > Example of the task list interface after selecting a year.
 
-[Insert Demo Image Here]
+![Demo Screenshot](insert-your-demo-screenshot-link-here)
 
 ## Technologies Used
 
