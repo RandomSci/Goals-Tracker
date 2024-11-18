@@ -15,7 +15,7 @@ This project is designed to track and visualize the goals and progress of a Comp
 
 ![Screenshot from 2024-11-15 03-03-39](https://github.com/user-attachments/assets/7fb852a3-7ea7-4b33-b21c-7b90f7f1ae15)
 
-![Screenshot from 2024-11-15 02-39-13](https://github.com/user-attachments/assets/0eca2603-15b6-4b4a-a4f9-955886f776ad)))
+![Screenshot from 2024-11-15 02-39-13](https://github.com/user-attachments/assets/0eca2603-15b6-4b4a-a4f9-955886f776ad)
 
 ## Technologies Used
 
